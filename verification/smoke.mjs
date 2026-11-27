@@ -1,0 +1,118 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {chromium} from 'playwright';
+
+const browser = await chromium.launch(process.env.POCKET_BROWSER_CHANNEL
+  ? {channel:process.env.POCKET_BROWSER_CHANNEL} : {});
+try {
+  const context = await browser.newContext({viewport:{width:402,height:874},deviceScaleFactor:1,hasTouch:true});
+  let page = await context.newPage();
+  const broken = [];
+  page.on('pageerror', error=>console.error(error.message));
+  page.on('response', response=>{if (!response.ok() && response.status()!==304) broken.push([response.status(), response.url()]);});
+  page.on('console', message=>{if (message.type()==='error') console.error(message.text());});
+  const button = name=>page.getByRole('button',{name,exact:true});
+  const screenshot = async name=>{
+    await page.evaluate(()=>document.fonts.ready);
+    await page.evaluate(async ()=>{
+      const images = Array.from(document.images).filter(image => image.getBoundingClientRect().top < innerHeight);
+      await Promise.all(images.map(image => {image.loading='eager';return image.decode();}));
+    });
+    await page.screenshot({path:`verification/${name}.png`});
+  };
+  await page.goto(process.env.POCKET_URL || 'http://localhost:4173');
+  await button('시작하기').waitFor();
+  await screenshot('intro');
+  await button('시작하기').click();
+  await screenshot('explore');
+  const cdp=await page.context().newCDPSession(page);
+  await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x:110,y:440}]});
+  for(let x=130;x<=300;x+=10)await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x,y:440}]});
+  await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
+  await page.locator('.card-caption').getByText('예나 Pocket').waitFor();
+  await button('예나 Pocket').click();
+  await screenshot('person');
+  await button('모자를 쓴 예나').click();
+  await button('누끼').click();
+  assert.equal(await button('누끼').getAttribute('aria-pressed'),'true');
+  await button('뒤로').click();
+  await button('19개 기록').click();
+  await screenshot('journal');
+  await button('뒤로').click();
+  await button('갤러리').click();
+  await screenshot('gallery');
+  const gallery = page.locator('.view-gallery');
+  await gallery.evaluate(el=>{el.scrollTop=345;});
+  await page.waitForFunction(()=>document.querySelector('.view-gallery')?.scrollTop===345);
+  await button('공원 하늘').click();
+  await button('뒤로').click();
+  await gallery.waitFor();
+  assert.equal(await gallery.evaluate(el=>el.scrollTop),345);
+  await button('뒤로').click();
+  await button('뒤로').click();
+  await page.locator('.card-caption').getByText('예나 Pocket').waitFor();
+  await button('메뉴').click();
+  await button('캘린더').click();
+  await screenshot('calendar');
+  await button('12월 13일, 1개 기록').click();
+  await button('도넛 상자').click();
+  await screenshot('detail');
+  await button('누끼').click();
+  await button('뒤로').click();
+  await button('뒤로').click();
+  await button('뒤로').click();
+  await button('예나 Pocket').click();
+  const cancel = page.waitForEvent('filechooser');
+  await button('새 사진 추가').click();
+  await (await cancel).setFiles([]);
+  await page.locator('.view-person').waitFor();
+
+  const input = await readFile('public/figma/1363-c6641.jpg');
+  const metadata='https://staticimgly.com/@imgly/background-removal-data/1.7.0/dist/resources.json';
+  const stopModelDownload=route=>route.abort();
+  await page.route(metadata,stopModelDownload);
+  const chooser = page.waitForEvent('filechooser');
+  await button('새 사진 추가').click();
+  await (await chooser).setFiles({name:'verification-original.jpg',mimeType:'image/jpeg',buffer:input});
+  await page.getByRole('alert').waitFor();
+  await page.unroute(metadata,stopModelDownload);
+  await button('다시 시도').click();
+  await button('포켓에 저장').waitFor({timeout:150000});
+  await screenshot('import');
+  await button('포켓에 저장').click();
+  await button('verification-original.jpg').waitFor();
+  const address = page.url();
+  await page.close();
+  page = await context.newPage();
+  await page.goto(address);
+  await button('시작하기').click();
+  await button('예나').click();
+  await button('예나 Pocket').click();
+  await button('verification-original.jpg').click();
+  await button('원본').waitFor();
+  const readImage = ()=>page.locator('.detail-image img').evaluate(async image=>{
+    const blob=await (await fetch(image.src)).blob();
+    const hash=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',await blob.arrayBuffer())));
+    const bitmap=await createImageBitmap(blob);
+    const canvas=document.createElement('canvas');
+    canvas.width=bitmap.width;
+    canvas.height=bitmap.height;
+    const ctx=canvas.getContext('2d');
+    ctx.drawImage(bitmap,0,0);
+    const rgba = ctx.getImageData(0,0,canvas.width,canvas.height).data;
+    let clear=0, visible=0;
+    for(let i=3;i<rgba.length;i+=4) {if(rgba[i]===0)clear++;else visible++;}
+    bitmap.close();
+    return {hash,clear,visible,type:blob.type};
+  });
+  const expected=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',input)));
+  assert.deepEqual((await readImage()).hash,expected);
+  await button('누끼').click();
+  const png=await readImage();
+  assert.equal(png.type,'image/png');
+  assert(png.clear>0 && png.visible>0);
+  assert.deepEqual(broken,[]);
+  console.log(`Verified touch navigation, 345px gallery restoration, picker cancel, failed model load and retry, segmentation, save and reload. PNG pixels: ${png.clear} transparent, ${png.visible} visible. Original SHA-256 matches.`);
+} finally {
+  await browser.close();
+}

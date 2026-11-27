@@ -1,0 +1,382 @@
+[
+  {
+    "path": "public/figma/1118-15924.png",
+    "frame": "541:1118",
+    "layer": "Image 31",
+    "format": "PNG",
+    "width": 1879,
+    "height": 1686,
+    "alphaChannel": true,
+    "sha256": "edfed58da7a5048ee485df23bce78624627cc3ac9382e7f329b7ddd453180eb1"
+  },
+  {
+    "path": "public/figma/1118-260e7.png",
+    "frame": "541:1118",
+    "layer": "Image 29",
+    "format": "PNG",
+    "width": 710,
+    "height": 1532,
+    "alphaChannel": true,
+    "sha256": "992f8af2c3d21696fa03f126ab178b012edeff10fb49b480602e1dfd659712c7"
+  },
+  {
+    "path": "public/figma/1118-3933d.png",
+    "frame": "541:1118",
+    "layer": "IMG_9005 4",
+    "format": "PNG",
+    "width": 3024,
+    "height": 4032,
+    "alphaChannel": true,
+    "sha256": "ff159c04a6999f9a33815f4c9bc2973a4bc4f161c56bff4fa9d392defe5522fc"
+  },
+  {
+    "path": "public/figma/1118-635fb.png",
+    "frame": "541:1118",
+    "layer": "Image 27",
+    "format": "PNG",
+    "width": 1453,
+    "height": 1340,
+    "alphaChannel": true,
+    "sha256": "5724239e0d5fc3552bad96f85a80fa8f069caac5c1bd84384651a021d5b96bf3"
+  },
+  {
+    "path": "public/figma/1118-68557.png",
+    "frame": "541:1118",
+    "layer": "Image 26",
+    "format": "PNG",
+    "width": 2794,
+    "height": 4032,
+    "alphaChannel": true,
+    "sha256": "7678656a578bf2eff69c5d9a08ac151b9232c06f9aac6a449ae2f527b371cb17"
+  },
+  {
+    "path": "public/figma/1118-9e632.jpg",
+    "frame": "541:1118",
+    "layer": "IMG_9005 3",
+    "format": "JPEG",
+    "width": 3024,
+    "height": 4032,
+    "alphaChannel": false,
+    "sha256": "834add5c84beea3052f2df9ec907163acb31b3656f10af965cdf874db75b8386"
+  },
+  {
+    "path": "public/figma/1118-9f031.png",
+    "frame": "541:1118",
+    "layer": "IMG_5252 3",
+    "format": "PNG",
+    "width": 3072,
+    "height": 4096,
+    "alphaChannel": true,
+    "sha256": "c7c99c7ab40ebdfea48faf829d9701924271861892c55fec6910d6cb9aa838db"
+  },
+  {
+    "path": "public/figma/1118-b6112.png",
+    "frame": "541:1118",
+    "layer": "IMG_5647 3",
+    "format": "PNG",
+    "width": 3072,
+    "height": 4096,
+    "alphaChannel": true,
+    "sha256": "aafb10caca01b0b9c91dcd735b26c30f2a13065b0e49dee1f5ba58dd0832288c"
+  },
+  {
+    "path": "public/figma/1118-bb034.png",
+    "frame": "541:1118",
+    "layer": "Image 5",
+    "format": "PNG",
+    "width": 2536,
+    "height": 2363,
+    "alphaChannel": true,
+    "sha256": "630ee621677bc877ec3a294b70daaa8450db67b574cf2adeca266dd4bc788c2d"
+  },
+  {
+    "path": "public/figma/1118-bba77.png",
+    "frame": "541:1118",
+    "layer": "Image 11",
+    "format": "PNG",
+    "width": 3151,
+    "height": 3243,
+    "alphaChannel": true,
+    "sha256": "a8b5bc1f4f2409b94ec7756d79faf2ddedf630abf08657b5a9ec6dc6ce10594c"
+  },
+  {
+    "path": "public/figma/1234-c30d1.jpg",
+    "frame": "541:1234",
+    "layer": "93FF0085-1808-4D42-8748-A0905DF50B5D 1",
+    "format": "JPEG",
+    "width": 2794,
+    "height": 4032,
+    "alphaChannel": false,
+    "sha256": "4d247ab1ffdc86cbc65444e4c0759ce1bbfa42ddb96554d568e03ba0acd68e84"
+  },
+  {
+    "path": "public/figma/1363-0fb36.png",
+    "frame": "541:1363",
+    "layer": null,
+    "format": "PNG",
+    "width": 49,
+    "height": 16,
+    "alphaChannel": true,
+    "sha256": "a9ca38c052b87fcd286f38521ee74893bc3ac89eee0bd2d1281f69863b0abb2a"
+  },
+  {
+    "path": "public/figma/1363-1a95e.png",
+    "frame": "541:1363",
+    "layer": null,
+    "format": "PNG",
+    "width": 12,
+    "height": 14,
+    "alphaChannel": true,
+    "sha256": "5310968da56a12a2705a5f9f34e3526241f7cd9d772e906c9f3d9206ecb4c8e2"
+  },
+  {
+    "path": "public/figma/1363-2d0d2.png",
+    "frame": "541:1363",
+    "layer": null,
+    "format": "PNG",
+    "width": 24,
+    "height": 10,
+    "alphaChannel": true,
+    "sha256": "c1ee2b91ddacfb84a9272af92648e597290e9848ae95d8bf58b0e2ac8ae1e839"
+  },
+  {
+    "path": "public/figma/1363-4eea0.png",
+    "frame": "541:1363",
+    "layer": null,
+    "format": "PNG",
+    "width": 31,
+    "height": 50,
+    "alphaChannel": true,
+    "sha256": "6c45773723963ff91a67f75f27dafa9fdbb10614e8959a96a96d8ad8e2facd70"
+  },
+  {
+    "path": "public/figma/1363-5b10f.png",
+    "frame": "541:1363",
+    "layer": null,
+    "format": "PNG",
+    "width": 94,
+    "height": 9,
+    "alphaChannel": true,
+    "sha256": "11a31615eebf0a3370f7b5e7e9ebd325b251eb261786ad230b03a0f396496089"
+  },
+  {
+    "path": "public/figma/1363-74967.jpg",
+    "frame": "541:1363",
+    "layer": "IMG_7295 3",
+    "format": "JPEG",
+    "width": 3072,
+    "height": 4096,
+    "alphaChannel": false,
+    "sha256": "1500bbbfbbf390e451a3bc0ae14707a149530551f1b04203bdbae485aead4c26"
+  },
+  {
+    "path": "public/figma/1363-923aa.png",
+    "frame": "541:1363",
+    "layer": "IMG_1571 3",
+    "format": "PNG",
+    "width": 3072,
+    "height": 4096,
+    "alphaChannel": true,
+    "sha256": "3edc81c0a5a8c901eeb1f1663ca44940680b55addf366cd8c0b5b68aaa45f476"
+  },
+  {
+    "path": "public/figma/1363-ad74f.png",
+    "frame": "541:1363",
+    "layer": null,
+    "format": "PNG",
+    "width": 24,
+    "height": 43,
+    "alphaChannel": true,
+    "sha256": "84c54f9faeaa856a9dcd837ce41d74377b048eee259e89fa2038fd79a6f6bc7f"
+  },
+  {
+    "path": "public/figma/1363-be31d.jpg",
+    "frame": "541:1363",
+    "layer": "IMG_5117 2",
+    "format": "JPEG",
+    "width": 5712,
+    "height": 4284,
+    "alphaChannel": false,
+    "sha256": "c3ba8e8be57d1d9c5ab63169118768e62778b7bad17356bec0fe4608493f9072"
+  },
+  {
+    "path": "public/figma/1363-c6641.jpg",
+    "frame": "541:1363",
+    "layer": "IMG_1571 3",
+    "format": "JPEG",
+    "width": 4284,
+    "height": 5712,
+    "alphaChannel": false,
+    "sha256": "32c1581aa4063af523e1507e80ac62a1f403d985935f1dd73ae6f71cf98c7770"
+  },
+  {
+    "path": "public/figma/1363-ca898.png",
+    "frame": "541:1363",
+    "layer": null,
+    "format": "PNG",
+    "width": 69,
+    "height": 70,
+    "alphaChannel": true,
+    "sha256": "6fcab07b5036919fe942fde6eac103117fb113061e9db7f27b45235d0292fddb"
+  },
+  {
+    "path": "public/figma/1363-faddb.jpg",
+    "frame": "541:1363",
+    "layer": "IMG_5252 3",
+    "format": "JPEG",
+    "width": 4284,
+    "height": 5712,
+    "alphaChannel": false,
+    "sha256": "247c08ef0310df3059f4acad32a467e49b549e56d26c411a0651c2539c747d72"
+  },
+  {
+    "path": "public/figma/1466-113f2.jpg",
+    "frame": "541:1466",
+    "layer": "EB3202BC-1988-40AE-B525-FA288BCEDC98_1_105_c 3",
+    "format": "MPO",
+    "width": 1024,
+    "height": 768,
+    "alphaChannel": false,
+    "sha256": "ba8a1998f1ba5d09a6e41256243ac340ae99357a2fe097907ef6f471d428b301"
+  },
+  {
+    "path": "public/figma/1466-1eaa8.jpg",
+    "frame": "541:1466",
+    "layer": "IMG_0550 6",
+    "format": "JPEG",
+    "width": 3024,
+    "height": 4032,
+    "alphaChannel": false,
+    "sha256": "7073ec850a40f05d7c19de02cd16320cc8ae5039c003e0bde6aff8b89c7bd9ed"
+  },
+  {
+    "path": "public/figma/1466-2df54.jpg",
+    "frame": "541:1466",
+    "layer": "IMG_5647 4",
+    "format": "JPEG",
+    "width": 4284,
+    "height": 5712,
+    "alphaChannel": false,
+    "sha256": "d56fe4e8f499938df435af5f8b1bafa69d39e7be89f63a68dab1501f27dbdb97"
+  },
+  {
+    "path": "public/figma/1466-b233b.jpg",
+    "frame": "541:1466",
+    "layer": "7AAF75A4-9B07-41CB-AC11-A26964883140_1_105_c 2",
+    "format": "MPO",
+    "width": 1024,
+    "height": 768,
+    "alphaChannel": false,
+    "sha256": "ae96c61c916050a1fde9ee9f33f04620a46ee7c212d7a139d95abda8e041beb6"
+  },
+  {
+    "path": "public/figma/1466-b70ff.jpg",
+    "frame": "541:1466",
+    "layer": "0ED1ED8C-A5EA-4B0E-9B78-B1DA4C5B0D61_1_105_c 4",
+    "format": "MPO",
+    "width": 1024,
+    "height": 768,
+    "alphaChannel": false,
+    "sha256": "b53af7527b836018e3e116226c169b9b89919e46491b394070f789811b4bdef5"
+  },
+  {
+    "path": "public/figma/1466-d9e3e.jpg",
+    "frame": "541:1466",
+    "layer": "6DC1BB53-EFAB-455E-8C73-50569E173666_1_105_c 3",
+    "format": "MPO",
+    "width": 1024,
+    "height": 768,
+    "alphaChannel": false,
+    "sha256": "9b62e08d50d18e0c3b26fbc655faebd8e40cd06093ab9c74ecd408daee238f17"
+  },
+  {
+    "path": "public/figma/1466-de6d3.jpg",
+    "frame": "541:1466",
+    "layer": "IMG_6023 4",
+    "format": "JPEG",
+    "width": 4284,
+    "height": 5712,
+    "alphaChannel": false,
+    "sha256": "330286ce135c7df2bedf8158d3e24e0bfe4bebf8929cf96db85d8b25ad8b4c03"
+  },
+  {
+    "path": "public/figma/1466-f4b6c.jpg",
+    "frame": "541:1466",
+    "layer": "B1BD03B1-D27A-49A5-9E36-6C2EC95CE5D7_1_105_c 2",
+    "format": "MPO",
+    "width": 768,
+    "height": 1024,
+    "alphaChannel": false,
+    "sha256": "0fb0f810c25b0e381c76e43ac311b9d5ccc24e98cec23ba517158c8589859bb6"
+  },
+  {
+    "path": "public/figma/1522-8e44c.png",
+    "frame": "541:1522",
+    "layer": "손윤민 1",
+    "format": "PNG",
+    "width": 1206,
+    "height": 2622,
+    "alphaChannel": true,
+    "sha256": "d93a0e6a6ac5ce53aaf3da7ee466c46a9e9750d1919f34a825a359e1b9882194"
+  },
+  {
+    "path": "public/figma/1522-9eee6.png",
+    "frame": "541:1522",
+    "layer": "유진우 1",
+    "format": "PNG",
+    "width": 1125,
+    "height": 2436,
+    "alphaChannel": true,
+    "sha256": "5ea4c32d35adc061a7e144ecb7c03508da3302fd2e4db1c7140507f935eb8f4c"
+  },
+  {
+    "path": "public/figma/1522-c86aa.png",
+    "frame": "541:1522",
+    "layer": "IMG_9005 2",
+    "format": "PNG",
+    "width": 3024,
+    "height": 4032,
+    "alphaChannel": true,
+    "sha256": "a19d9a8409dc452b9040934326a409f9853a64054abfbb96839bc4180fc4907d"
+  },
+  {
+    "path": "public/figma/547_1565-0f4e2.jpg",
+    "frame": "547:1565",
+    "layer": "IMG_5522 1",
+    "format": "JPEG",
+    "width": 5712,
+    "height": 4284,
+    "alphaChannel": false,
+    "sha256": "7a132a9a9ac6c19aca0f067ec2011d2eb8d9a7625a3455c44f78133de90dff3f"
+  },
+  {
+    "path": "public/figma/547_1565-7220d.jpg",
+    "frame": "547:1565",
+    "layer": "IMG_5556 1",
+    "format": "JPEG",
+    "width": 4032,
+    "height": 3024,
+    "alphaChannel": false,
+    "sha256": "0993c07aef1ff21c53e4701926f2242b9544336c7bda103a414f0557edba9b35"
+  },
+  {
+    "path": "public/figma/547_1565-789cb.jpg",
+    "frame": "547:1565",
+    "layer": "IMG_5548 1",
+    "format": "JPEG",
+    "width": 4032,
+    "height": 3024,
+    "alphaChannel": false,
+    "sha256": "308927cca7c67125dd557d3a631ad3d011a7f0de74b47e607075136017df6264"
+  },
+  {
+    "path": "public/figma/547_1565-8fc78.jpg",
+    "frame": "547:1565",
+    "layer": "IMG_5523 1",
+    "format": "JPEG",
+    "width": 5712,
+    "height": 4284,
+    "alphaChannel": false,
+    "sha256": "0a2828785319560034569a2f6ee81ae6990d30b3f69c22130dfe2852706b4281"
+  }
+]
